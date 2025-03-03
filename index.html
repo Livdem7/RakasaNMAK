@@ -91,6 +91,18 @@
                 max-width: 120px; /* Уменьшаем логотип на мобильных устройствах */
             }
         }
+
+        /* Принудительное использование светлой темы для всех устройств */
+        @media (prefers-color-scheme: dark) {
+            body, .container {
+                background-color: white !important;
+                color: black !important;
+            }
+            .btn {
+                background-color: black !important;
+                color: white !important;
+            }
+        }
     </style>
 </head>
 <body>
