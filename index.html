@@ -22,27 +22,28 @@
         }
 
         .container {
-            max-width: 400px;
+            max-width: 500px; /* Увеличиваем максимальную ширину для более крупного дизайна */
             width: 90%;
-            padding: 20px;
+            padding: 30px; /* Увеличиваем отступы для эстетики */
             background-color: white; /* Чисто белый фон без прозрачности */
-            border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 20px; /* Более плавные края */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Увеличиваем тень для большей глубины */
             opacity: 0; /* Начальное состояние для JavaScript-анимации */
         }
 
         .logo {
-            max-width: 150px; /* Размер логотипа */
-            margin-bottom: 20px; /* Отступ перед текстом */
+            max-width: 200px; /* Увеличиваем размер логотипа */
+            margin-bottom: 30px; /* Увеличиваем отступ после логотипа */
+            opacity: 0; /* Начальное состояние для JavaScript-анимации */
         }
 
         h1 {
-            font-family: 'Rakkas', cursive; /* Декоративный шрифт для "Rakasa Nmak" */
-            font-size: 36px; /* Увеличиваем размер для стилизации */
-            text-transform: uppercase;
+            font-family: 'Rakkas', cursive; /* Декоративный шрифт для "RAKASA NMAK" */
+            font-size: 48px; /* Увеличиваем размер шрифта для крупного и эффектного вида */
+            text-transform: uppercase; /* Большие буквы, как ты указала */
             font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: 2px; /* Добавляем расстояние между буквами для стилизации */
+            margin-bottom: 40px; /* Увеличиваем отступ перед кнопками */
+            letter-spacing: 4px; /* Увеличиваем расстояние между буквами для большего эффекта */
             color: black; /* Чёрный цвет текста */
             opacity: 0; /* Начальное состояние для JavaScript-анимации */
         }
@@ -53,13 +54,13 @@
             background-color: black; /* Чисто чёрный фон кнопок */
             color: white; /* Белый текст на кнопках */
             text-decoration: none;
-            padding: 15px;
-            margin: 10px 0;
-            font-size: 18px;
-            border-radius: 10px;
+            padding: 20px; /* Увеличиваем внутренние отступы для крупных кнопок */
+            margin: 15px 0; /* Увеличиваем внешние отступы между кнопками */
+            font-size: 24px; /* Увеличиваем размер текста на кнопках */
+            border-radius: 15px; /* Более плавные края кнопок */
             border: none;
-            font-weight: 600;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            font-weight: 700; /* Увеличиваем насыщенность текста */
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Увеличиваем тень для эстетики */
             transition: transform 0.3s, background-color 0.3s, opacity 0.5s;
             opacity: 0; /* Начальное состояние для JavaScript-анимации */
         }
@@ -72,23 +73,26 @@
         /* Адаптивность для мобильных устройств */
         @media (max-width: 480px) {
             .container {
-                padding: 15px;
+                padding: 20px;
                 width: 85%;
                 background-color: white; /* Чисто белый фон для мобильных */
             }
 
+            .logo {
+                max-width: 150px; /* Уменьшаем логотип на мобильных, но он всё ещё крупный */
+                margin-bottom: 20px; /* Уменьшаем отступ */
+            }
+
             h1 {
-                font-size: 28px;
+                font-size: 36px; /* Уменьшаем размер заголовка для мобильных, но он остаётся крупным */
+                letter-spacing: 2px; /* Уменьшаем расстояние между буквами для читаемости */
+                margin-bottom: 25px; /* Уменьшаем отступ */
             }
 
             .btn {
-                font-size: 16px;
-                padding: 12px;
-                background-color: black; /* Чисто чёрный фон кнопок для мобильных */
-            }
-
-            .logo {
-                max-width: 120px; /* Уменьшаем логотип на мобильных устройствах */
+                font-size: 18px; /* Уменьшаем размер текста кнопок для мобильных, но они остаются крупными */
+                padding: 15px; /* Уменьшаем внутренние отступы */
+                margin: 10px 0; /* Уменьшаем внешние отступы */
             }
         }
 
@@ -108,7 +112,7 @@
 <body>
     <div class="container">
         <img src="https://github.com/Livdem7/RakasaNMAK/raw/main/image-rakasa.png" alt="Логотип Rakasa Nmak" class="logo">
-        <h1>Rakasa Nmak</h1>
+        <h1>RAKASA NMAK</h1>
         <a href="https://wa.me/yourwhatsapp" class="btn">WhatsApp</a>
         <a href="https://t.me/yourtelegram" class="btn">Telegram</a>
         <a href="https://instagram.com/yourinstagram" class="btn">Instagram</a>
